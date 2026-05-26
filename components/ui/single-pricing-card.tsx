@@ -11,6 +11,7 @@ import {
   Infinity,
   Stethoscope,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Badge } from "@/components/ui/badge";
@@ -98,24 +99,17 @@ export function CORCPricingCard() {
           <div className="flex flex-col lg:flex-row">
             {/* ── Left column: pricing ── */}
             <div className="p-8 lg:p-10 lg:w-1/2 flex flex-col border-b border-secondary/10 lg:border-b-0 lg:border-r">
-              {/* Badge */}
-              <div className="mb-6">
-                <Badge>
-                  <BookOpen className="h-3 w-3" />
-                  Acesso Vitalício
-                </Badge>
-              </div>
-
-              {/* Title */}
-              <h3 className="font-serif font-black italic text-accent text-3xl tracking-wide mb-1">
-                C.O.R.C.
-              </h3>
-              <p className="font-serif font-light text-secondary/50 text-xs tracking-[0.2em] uppercase mb-6">
-                Curso Online de Raciocínio Clínico
-              </p>
+              {/* Logo */}
+              <Image
+                src="/logo.svg"
+                alt="C.O.R.C. — Curso Online de Raciocínio Clínico"
+                width={320}
+                height={62}
+                className="w-72 mb-6"
+              />
 
               <p className="font-serif font-light text-secondary/70 text-sm leading-relaxed mb-8">
-                Uma formação permanente em raciocínio clínico com o Dr. Carlos
+                Uma formação permanente em raciocínio clínico com<br />o Dr. Carlos
                 Antônio Cacau — do caso real à decisão.
               </p>
 
