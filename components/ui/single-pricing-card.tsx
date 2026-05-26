@@ -105,10 +105,10 @@ export function CORCPricingCard() {
                 alt="C.O.R.C. — Curso Online de Raciocínio Clínico"
                 width={320}
                 height={62}
-                className="w-72 mb-6"
+                className="w-52 lg:w-72 mb-6"
               />
 
-              <p className="font-serif font-light text-secondary/70 text-sm leading-relaxed mb-8">
+              <p className="font-serif font-light text-secondary/70 text-sm leading-relaxed mb-3 lg:mb-8">
                 Uma formação permanente em raciocínio clínico com<br />o Dr. Carlos
                 Antônio Cacau — do caso real à decisão.
               </p>
@@ -122,11 +122,11 @@ export function CORCPricingCard() {
                   </span>{" "}
                   por apenas 12x de
                 </p>
-                <div className="flex items-baseline gap-1 mb-6 -mt-5">
+                <div className="flex items-baseline gap-1 mb-6 -mt-2 lg:-mt-5">
                   <span className="font-serif font-bold text-secondary text-3xl">
                     R$
                   </span>
-                  <span className="font-serif font-black text-secondary text-9xl leading-none tracking-tighter">
+                  <span className="font-serif font-black text-secondary text-8xl lg:text-9xl leading-none tracking-tighter">
                     77
                   </span>
                 </div>
@@ -211,13 +211,13 @@ export function CORCPricingCard() {
                             <img
                               src={t.avatar}
                               alt={t.name}
-                              className="w-9 h-9 rounded-full object-cover grayscale opacity-70"
+                              className="w-5 h-5 lg:w-9 lg:h-9 rounded-full object-cover grayscale opacity-70"
                             />
                             <div className="flex-1 min-w-0">
-                              <p className="font-serif font-bold text-secondary/90 text-sm leading-none">
+                              <p className="font-serif font-bold text-secondary/90 text-[10px] lg:text-sm leading-none">
                                 {t.name}
                               </p>
-                              <p className="font-serif font-light text-secondary/40 text-xs mt-0.5 truncate">
+                              <p className="font-serif font-light text-secondary/40 text-[9px] lg:text-xs mt-0.5 truncate">
                                 {t.role}
                               </p>
                             </div>
@@ -225,12 +225,12 @@ export function CORCPricingCard() {
                               {Array.from({ length: t.rating }).map((_, si) => (
                                 <Star
                                   key={si}
-                                  className="h-3 w-3 fill-accent text-accent"
+                                  className="h-2 w-2 lg:h-3 lg:w-3 fill-accent text-accent"
                                 />
                               ))}
                             </div>
                           </div>
-                          <p className="font-serif font-light italic text-secondary/60 text-sm leading-relaxed">
+                          <p className="font-serif font-light italic text-secondary/60 text-xs lg:text-sm leading-relaxed">
                             "{t.content}"
                           </p>
                         </motion.div>

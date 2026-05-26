@@ -21,13 +21,14 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="section-light py-24 px-6">
+    <section className="section-light py-14 lg:py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-primary text-3xl sm:text-4xl font-light text-center mb-16">
+        <h2 className="font-serif text-primary text-3xl sm:text-4xl font-light text-center mb-8 lg:mb-16">
           <em className="font-bold italic text-accent not-italic" style={{ fontStyle: "italic" }}>
             A marca deixada
-          </em>{" "}
-          <span className="font-bold">nos alunos do CORC</span>
+          </em>
+          <br className="lg:hidden" />
+          {" "}<span className="font-bold">nos alunos do CORC</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
