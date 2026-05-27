@@ -9,7 +9,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section id="inicio" className="section-dark min-h-screen flex flex-col">
+    <section id="inicio" className="section-dark min-h-screen flex flex-col relative">
       {/* Mobile top image */}
       <div
         className="w-full lg:hidden"
@@ -24,8 +24,8 @@ export default function Hero() {
       <div className="flex-1 grid grid-cols-1 lg:grid-cols-2">
 
         {/* Left: Text Content */}
-        <div className="flex flex-col items-center text-center justify-end gap-4 max-w-xl px-6 pt-10 pb-24 w-full lg:items-start lg:text-left lg:justify-center lg:gap-7 lg:px-8 lg:py-16 lg:ml-[18%]">
-          <div className="flex flex-col items-center gap-3 lg:items-start lg:gap-5">
+        <div className="flex flex-col items-start text-left justify-start gap-4 max-w-xl px-6 pt-6 pb-10 w-full lg:items-start lg:text-left lg:justify-center lg:gap-7 lg:px-8 lg:pt-8 lg:pb-32 lg:ml-[18%] lg:max-w-none lg:pr-12 relative z-10">
+          <div className="flex flex-col items-start gap-4 lg:items-start lg:gap-5">
             <Image
               src="/logo.svg"
               alt="C.O.R.C. — Curso Online de Raciocínio Clínico"
@@ -34,14 +34,14 @@ export default function Hero() {
               className="w-36 lg:w-60"
               priority
             />
-            <h1 className="font-serif font-bold text-accent text-[1.2rem] leading-[1.15] tracking-tight lg:text-[2.3rem]">
+            <h1 className="font-serif font-bold text-accent text-[1.6rem] leading-[1.15] tracking-tight lg:text-[2.9rem]">
               Experimente a Medicina{" "}
               <span className="block">de Vida Real. Entre sinais,{" "}
               <span className="block">sintomas e decisões.</span></span>
             </h1>
           </div>
 
-          <p className="font-serif font-light text-secondary/85 text-xs leading-relaxed lg:text-[1.35rem]">
+          <p className="font-serif font-light text-secondary/85 text-base leading-relaxed lg:text-2xl">
             Saia da pressão e do diabetes. Aprenda a raciocinar e conduzir casos
             do complexo ao simples no dia a dia.
           </p>
@@ -55,11 +55,11 @@ export default function Hero() {
           </a>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 gap-x-4 gap-y-2 pt-3 border-t border-accent/20 lg:gap-x-8 lg:gap-y-4 lg:pt-6">
+          <div className="grid grid-cols-2 gap-x-3 gap-y-1 border-t border-accent/20 pt-7 mt-3 lg:mt-0 lg:gap-x-8 lg:gap-y-4 lg:pt-6">
             {stats.map((stat, i) => (
-              <div key={i} className="flex flex-col gap-0.5">
-                <span className="font-serif font-bold text-accent text-[10px] lg:text-base">{stat.value}</span>
-                <span className="font-serif font-light text-secondary/50 text-[9px] leading-snug lg:text-xs">{stat.label}</span>
+              <div key={i} className="flex flex-col gap-0">
+                <span className="font-serif font-bold text-accent text-xs lg:text-base">{stat.value}</span>
+                <span className="font-serif font-light text-secondary/50 text-[10px] leading-snug lg:text-xs">{stat.label}</span>
               </div>
             ))}
           </div>
@@ -86,6 +86,10 @@ export default function Hero() {
         </div>
 
       </div>
+
+      {/* Peek da próxima seção */}
+      <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#fffff2] rounded-t-[10rem] hidden lg:block" />
+
     </section>
   );
 }

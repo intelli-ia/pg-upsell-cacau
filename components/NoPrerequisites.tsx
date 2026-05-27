@@ -3,9 +3,9 @@ export default function NoPrerequisites() {
     <section className="section-dark py-14 lg:py-24 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <div className="w-12 h-px bg-accent mx-auto mb-5 lg:mb-10" />
-        <p className="font-serif font-light text-secondary/90 text-lg sm:text-xl leading-relaxed mb-5 lg:mb-10">
+        <p className="font-serif font-light text-secondary/90 text-lg sm:text-xl lg:text-2xl leading-relaxed mb-5 lg:mb-10">
           Você não precisa ter base avançada para começar. O CORC não exige
-          conhecimento prévio — você irá construir raciocínio do zero.
+          conhecimento prévio, você irá construir raciocínio do <span className="whitespace-nowrap">zero.</span>
         </p>
         <a
           href="#preco"

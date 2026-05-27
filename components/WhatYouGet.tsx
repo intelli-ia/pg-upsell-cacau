@@ -79,7 +79,7 @@ export default function WhatYouGet() {
           <p className="font-serif font-light text-primary/50 text-sm tracking-[0.2em] uppercase mb-3">
             O que você receberá:
           </p>
-          <h2 className="font-serif font-bold text-primary text-3xl sm:text-4xl xl:text-5xl">
+          <h2 className="font-serif font-bold text-primary text-3xl sm:text-4xl lg:text-[2.9rem]">
             Uma formação permanente.
           </h2>
           <div className="w-12 h-px bg-accent mx-auto mt-6" />
@@ -108,10 +108,10 @@ export default function WhatYouGet() {
                   </span>
                 )}
               </div>
-              <h3 className="font-serif font-bold text-primary text-sm leading-snug">
+              <h3 className="font-serif font-bold text-primary text-base leading-snug">
                 {feature.title}
               </h3>
-              <p className="font-serif font-light text-primary/65 text-xs leading-relaxed flex-1">
+              <p className="font-serif font-light text-primary/65 text-sm leading-relaxed flex-1">
                 {feature.description}
               </p>
             </div>
@@ -159,10 +159,10 @@ export default function WhatYouGet() {
                   </span>
                 )}
               </div>
-              <h3 className="font-serif font-bold text-primary text-base leading-snug">
+              <h3 className="font-serif font-bold text-primary text-base lg:text-2xl leading-snug">
                 {feature.title}
               </h3>
-              <p className="font-serif font-light text-primary/65 text-sm leading-relaxed flex-1">
+              <p className="font-serif font-light text-primary/65 text-sm lg:text-xl leading-relaxed flex-1">
                 {feature.description}
               </p>
             </div>

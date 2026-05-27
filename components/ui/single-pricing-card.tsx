@@ -98,7 +98,7 @@ export function CORCPricingCard() {
         >
           <div className="flex flex-col lg:flex-row">
             {/* ── Left column: pricing ── */}
-            <div className="p-8 lg:p-10 lg:w-1/2 flex flex-col border-b border-secondary/10 lg:border-b-0 lg:border-r">
+            <div className="p-8 lg:p-14 lg:w-1/2 flex flex-col border-b border-secondary/10 lg:border-b-0 lg:border-r">
               {/* Logo */}
               <Image
                 src="/logo.svg"
@@ -108,9 +108,9 @@ export function CORCPricingCard() {
                 className="w-52 lg:w-72 mb-6"
               />
 
-              <p className="font-serif font-light text-secondary/70 text-sm leading-relaxed mb-3 lg:mb-8">
+              <p className="font-serif font-light text-secondary/70 text-sm lg:text-lg leading-relaxed mb-3 lg:mb-8">
                 Uma formação permanente em raciocínio clínico com<br />o Dr. Carlos
-                Antônio Cacau — do caso real à decisão.
+                Antônio Cacau, do caso real à decisão.
               </p>
 
               {/* Price */}
@@ -126,13 +126,14 @@ export function CORCPricingCard() {
                   <span className="font-serif font-bold text-secondary text-3xl">
                     R$
                   </span>
-                  <span className="font-serif font-black text-secondary text-8xl lg:text-9xl leading-none tracking-tighter">
-                    77
+                  <span className="font-serif font-black text-secondary text-8xl lg:text-9xl leading-none tracking-tighter translate-y-6 inline-block">
+                    80
                   </span>
+                  <span className="font-serif font-bold text-secondary text-3xl leading-none">,98</span>
                 </div>
                 <p className="font-serif font-light text-secondary/50 text-base mt-2">
                   ou{" "}
-                  <strong className="font-bold text-secondary/80">R$770</strong>{" "}
+                  <strong className="font-bold text-secondary/80">R$797,00</strong>{" "}
                   à vista
                 </p>
               </div>
@@ -142,7 +143,7 @@ export function CORCPricingCard() {
                 {benefits.map(({ icon: Icon, text }, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <Icon className="h-4 w-4 text-accent flex-shrink-0" />
-                    <span className="font-serif font-light text-secondary/75 text-sm">
+                    <span className="font-serif font-light text-secondary/75 text-sm lg:text-base">
                       {text}
                     </span>
                   </li>
@@ -152,13 +153,13 @@ export function CORCPricingCard() {
               {/* CTAs */}
               <div className="mt-auto flex flex-col gap-2">
                 <Button size="sm" className="w-full group" asChild>
-                  <Link href="#">
+                  <Link href="https://pay.hub.la/Bx8I7wO9zk0DmaF1OUEP" target="_blank">
                     Clique e Matricule-se
                     <ChevronRight className="h-3 w-3 ml-auto transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
                 <Button variant="outline" size="sm" className="w-full" asChild>
-                  <Link href="https://wa.me/5500000000000" target="_blank">
+                  <Link href="https://wa.me/5571834772640" target="_blank">
                     <MessageCircle className="h-3 w-3" />
                     Tenho dúvidas
                   </Link>
@@ -167,7 +168,7 @@ export function CORCPricingCard() {
             </div>
 
             {/* ── Right column: features + testimonials ── */}
-            <div className="p-8 lg:p-10 lg:w-1/2 flex flex-col">
+            <div className="p-8 lg:p-14 lg:w-1/2 flex flex-col">
               <p className="font-serif font-light text-secondary/40 text-[10px] tracking-[0.25em] uppercase mb-4">
                 O que está incluído
               </p>
@@ -184,7 +185,7 @@ export function CORCPricingCard() {
                     <span className="flex-shrink-0 mt-0.5 w-5 h-5 border border-accent/50 flex items-center justify-center">
                       <Check className="h-3 w-3 text-accent" />
                     </span>
-                    <span className="font-serif font-light text-secondary/75 text-sm leading-snug">
+                    <span className="font-serif font-light text-secondary/75 text-sm lg:text-base leading-snug">
                       {feat}
                     </span>
                   </motion.li>

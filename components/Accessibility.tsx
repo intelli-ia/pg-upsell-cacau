@@ -7,7 +7,7 @@ export default function Accessibility() {
   return (
     <section className="section-dark py-14 lg:py-24 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="font-serif font-bold text-secondary text-3xl sm:text-4xl xl:text-5xl leading-snug mb-3 lg:mb-6">
+        <h2 className="font-serif font-bold text-secondary text-3xl sm:text-4xl lg:text-[2.9rem] leading-snug mb-3 lg:mb-6">
           Acessível de
           <br className="lg:hidden" />{" "}
           <em className="text-accent" style={{ fontStyle: "italic" }}>
@@ -15,7 +15,7 @@ export default function Accessibility() {
           </em>
         </h2>
 
-        <p className="font-serif font-light text-secondary/75 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-6 lg:mb-16">
+        <p className="font-serif font-light text-secondary/75 text-lg sm:text-xl lg:text-2xl leading-relaxed max-w-2xl mx-auto mb-6 lg:mb-16">
           Você pode assistir e reassistir o CORC de qualquer lugar com internet.
           No celular, computador ou tablet.
         </p>

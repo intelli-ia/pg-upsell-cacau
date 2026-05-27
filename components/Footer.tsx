@@ -13,7 +13,7 @@ export default function Footer() {
         />
 
         <p className="font-serif font-light text-secondary/30 text-xs text-center sm:text-right">
-          © {new Date().getFullYear()} C.O.R.C. — Dr. Carlos Antônio Moura.
+          © {new Date().getFullYear()} C.O.R.C., Dr. Carlos Antônio Moura.
           <br className="sm:hidden" />{" "}
           Todos os direitos reservados.
         </p>

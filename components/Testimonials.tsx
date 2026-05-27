@@ -23,7 +23,7 @@ export default function Testimonials() {
   return (
     <section className="section-light py-14 lg:py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-primary text-3xl sm:text-4xl font-light text-center mb-8 lg:mb-16">
+        <h2 className="font-serif text-primary text-3xl sm:text-4xl lg:text-[2.9rem] font-light text-center mb-8 lg:mb-16">
           <em className="font-bold italic text-accent not-italic" style={{ fontStyle: "italic" }}>
             A marca deixada
           </em>
@@ -44,7 +44,7 @@ export default function Testimonials() {
                   <span key={si} className="text-accent text-base">★</span>
                 ))}
               </div>
-              <p className="font-serif font-light text-primary/85 text-base leading-relaxed italic flex-1">
+              <p className="font-serif font-light text-primary/85 text-base lg:text-2xl leading-relaxed italic flex-1">
                 "{t.text}"
               </p>
               <div className="border-t border-primary/15 pt-5">

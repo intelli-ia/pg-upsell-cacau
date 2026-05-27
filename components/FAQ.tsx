@@ -6,7 +6,7 @@ const faqs = [
   {
     question: "O CORC oferece certificado?",
     answer:
-      "O CORC não é um curso credencialista. O foco é o aprendizado e o desenvolvimento do raciocínio clínico — não um papel. Não emitimos certificado.",
+      "O CORC não é um curso credencialista. O foco é o aprendizado e o desenvolvimento do raciocínio clínico, não um papel. Não emitimos certificado.",
   },
   {
     question: "Tem garantia?",
@@ -36,7 +36,7 @@ export default function FAQ() {
   return (
     <section className="section-dark py-14 lg:py-24 px-6">
       <div className="max-w-3xl mx-auto">
-        <h2 className="font-serif font-bold text-accent text-3xl sm:text-4xl text-center mb-8 lg:mb-14 leading-snug">
+        <h2 className="font-serif font-bold text-accent text-3xl sm:text-4xl lg:text-[2.9rem] text-center mb-8 lg:mb-14 leading-snug">
           Perguntas Frequentes
         </h2>
 
@@ -48,7 +48,7 @@ export default function FAQ() {
                 onClick={() => setOpen(open === i ? null : i)}
                 aria-expanded={open === i}
               >
-                <span className="font-serif font-light text-secondary/90 text-base group-hover:text-secondary transition-colors">
+                <span className="font-serif font-light text-secondary/90 text-base lg:text-xl group-hover:text-secondary transition-colors">
                   {faq.question}
                 </span>
                 <span className="flex-shrink-0 w-6 h-6 border border-accent/50 flex items-center justify-center text-accent text-lg leading-none font-light">
@@ -58,7 +58,7 @@ export default function FAQ() {
 
               {open === i && (
                 <div className="pb-6 pr-12">
-                  <p className="font-serif font-light text-secondary/60 text-sm leading-relaxed">
+                  <p className="font-serif font-light text-secondary/60 text-sm lg:text-2xl leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -70,7 +70,7 @@ export default function FAQ() {
         {/* Dual CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 mt-8 lg:gap-4 lg:mt-16">
           <a
-            href="https://wa.me/5500000000000"
+            href="https://wa.me/5571834772640"
             className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-[10px] tracking-[0.15em] uppercase py-2 px-4 hover:bg-[#1ebe5d] transition-colors lg:text-xs lg:tracking-[0.18em] lg:py-5 lg:gap-2.5"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="lg:w-[18px] lg:h-[18px]">
@@ -79,7 +79,8 @@ export default function FAQ() {
             Tenho dúvidas ainda!
           </a>
           <a
-            href="#preco"
+            href="https://pay.hub.la/Bx8I7wO9zk0DmaF1OUEP"
+            target="_blank"
             className="flex-1 bg-accent text-primary font-bold text-[10px] tracking-[0.15em] uppercase py-2 px-4 text-center hover:bg-accent/60 transition-colors lg:text-xs lg:tracking-[0.18em] lg:py-5"
           >
             Clique e Matricule-se

@@ -25,7 +25,8 @@ export default function Pricing() {
         </p>
 
         <a
-          href="#"
+          href="https://pay.hub.la/Bx8I7wO9zk0DmaF1OUEP"
+          target="_blank"
           className="inline-block bg-accent text-primary font-bold text-sm tracking-[0.2em] uppercase px-16 py-5 hover:bg-accent/90 transition-colors mb-10"
         >
           Clique e Matricule-se
