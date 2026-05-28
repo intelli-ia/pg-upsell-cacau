@@ -70,7 +70,7 @@ export default function FAQ() {
         {/* Dual CTAs */}
         <div className="flex flex-col sm:flex-row gap-3 mt-8 lg:gap-4 lg:mt-16">
           <a
-            href="https://wa.me/5571834772640"
+            href="https://wa.me/5571983477264"
             className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-[10px] tracking-[0.15em] uppercase py-2 px-4 hover:bg-[#1ebe5d] transition-colors lg:text-xs lg:tracking-[0.18em] lg:py-5 lg:gap-2.5"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="lg:w-[18px] lg:h-[18px]">

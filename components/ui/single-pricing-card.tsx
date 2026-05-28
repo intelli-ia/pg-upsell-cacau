@@ -159,7 +159,7 @@ export function CORCPricingCard() {
                   </Link>
                 </Button>
                 <Button variant="outline" size="sm" className="w-full" asChild>
-                  <Link href="https://wa.me/5571834772640" target="_blank">
+                  <Link href="https://wa.me/5571983477264" target="_blank">
                     <MessageCircle className="h-3 w-3" />
                     Tenho dúvidas
                   </Link>
