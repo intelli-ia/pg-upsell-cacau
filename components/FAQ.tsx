@@ -4,29 +4,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "O CORC oferece certificado?",
+    question: "O curso é apenas para estudantes de medicina?",
     answer:
-      "O CORC não é um curso credencialista. O foco é o aprendizado e o desenvolvimento do raciocínio clínico, não um papel. Não emitimos certificado.",
+      "Não. Embora seja um divisor de águas para alunos do 3º ao 6º ano que sofrem com o método PBL, o CGS é altamente recomendado para médicos recém-formados que buscam mais segurança e organização mental para seus plantões e visitas de enfermaria.",
   },
   {
-    question: "Tem garantia?",
+    question: "As aulas são muito teóricas?",
     answer:
-      "Sim. Você tem 15 dias a partir da data de compra para testar o produto. Caso não fique satisfeito, basta solicitar o reembolso integral, sem burocracia e sem perguntas.",
+      "Pelo contrário. O objetivo do Cacau é a praticidade aguda. O quadro serve para simplificar temas complexos e torná-los aplicáveis imediatamente no seu próximo caso clínico.",
   },
   {
-    question: "As aulas são ao vivo ou gravadas?",
+    question: 'Como funciona o "Curso Vivo"?',
     answer:
-      "O CORC possui aulas gravadas disponíveis 24 horas por dia e também encontros periódicos ao vivo com o Dr. Carlos Antônio. Todas as aulas ao vivo são gravadas e ficam disponíveis na plataforma.",
+      'Ao adquirir o CGS, você não recebe um pacote estático de aulas. O curso é alimentado paulatinamente. Sempre que um novo tema relevante surge na prática do Cacau, ele pode se transformar em um novo "Raciocínio no Quadro" adicionado à plataforma.',
   },
   {
-    question: "Preciso estar em qual semestre da faculdade para acompanhar?",
+    question: "Emite certificado?",
     answer:
-      "O CORC não exige semestre mínimo. O conteúdo é acessível a estudantes de qualquer fase da graduação e a médicos já formados. O raciocínio é construído do zero, progressivamente.",
+      "O CGS não é um curso credencialista. O foco é o aprendizado e o desenvolvimento do raciocínio clínico, não um papel. Não emitimos certificado.",
   },
   {
-    question: "Consigo acompanhar mesmo com pouco tempo?",
-    answer:
-      "Sim. As aulas são gravadas e ficam disponíveis para você assistir e reassistir no seu próprio ritmo, quando e onde puder. Não há prazos para conclusão.",
+    question: "Por quanto tempo terei acesso?",
+    answer: "1 ano de acesso para acompanhar as atualizações do curso vivo.",
   },
 ];
 

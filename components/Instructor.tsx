@@ -32,30 +32,36 @@ export default function Instructor() {
               O professor
             </p>
             <h2 className="font-serif font-bold text-accent text-3xl sm:text-4xl lg:text-[2.9rem] leading-snug">
-              Quem conduz o CORC?
+              Quem conduz o CGS:
             </h2>
           </div>
 
 
           <p className="font-serif font-bold text-primary text-base lg:text-xl leading-relaxed">
-            Carlos Antonio Moura, médico clínico e reumatologista, escritor,
+            Carlos Antonio Moura é médico clínico e reumatologista, escritor,
             palestrante e professor de Clínica Médica.
           </p>
 
           <p className="font-serif font-light text-primary/75 text-base lg:text-xl leading-relaxed">
-            Há mais de quinze anos acompanha a formação de estudantes e
+            Há mais de quinze anos, ele acompanha a formação de estudantes e
             residentes à beira do leito, onde a medicina se revela como ela é:
-            viva, imprevisível, concreta.
+            viva, imprevisível e concreta.
           </p>
 
           <p className="font-serif font-light text-primary/75 text-base lg:text-xl leading-relaxed">
-            O CORC nasceu da necessidade de um espaço onde fosse possível
-            pensar a medicina em tempo real, tal qual vivida nas Sessões de
-            Raciocínio do professor Carlos Geraldo. Em cada aula se discute
-            situações reais, sem conhecer antecipadamente seus desfechos. Isso
-            permite ao aluno testemunhar <em>in natura</em> o raciocínio clínico
-            diante da dúvida: hipótese por hipótese, passo a passo, com
-            humildade e sinceridade.
+            O Grandes Síndromes: O Raciocínio no Quadro é a materialização
+            desse hábito. Foi no giz e na lousa que o professor Carlos
+            Antonio encontrou a forma mais sincera de organizar o caos da
+            dúvida diagnóstica e transmitir o que anos de prática e leitura
+            de livros consolidaram.
+          </p>
+
+          <p className="font-serif font-light text-primary/75 text-base lg:text-xl leading-relaxed">
+            Aqui, você não assiste a uma aula ensaiada com desfechos prontos.
+            Você testemunha o raciocínio clínico <em>in natura</em>: hipótese
+            por hipótese, passo a passo. É o esforço de transformar a
+            complexidade da beira do leito em estruturas lógicas que você
+            pode carregar para a sua própria prática.
           </p>
 
           <blockquote className="py-2">
@@ -65,9 +71,9 @@ export default function Instructor() {
           </blockquote>
 
           <p className="font-serif font-light text-primary/75 text-base lg:text-xl leading-relaxed">
-            O CORC é um esforço de transmitir o que por anos Carlos Antonio se
-            habituou a fazer: ver pacientes, ler livros e ensinar medicina. Se
-            esse também for o seu caminho, sinta-se convidado.
+            Se o seu caminho também é o de ver pacientes com profundidade e
+            buscar a verdade por trás de cada sinal clínico, sinta-se
+            convidado a instalar as suas primeiras gavetas cerebrais aqui.
           </p>
         </div>
       </div>

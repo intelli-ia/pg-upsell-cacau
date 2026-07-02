@@ -1,68 +1,45 @@
 "use client";
 
 import { AnimatePresence, motion, useInView } from "framer-motion";
-import {
-  BookOpen,
-  Check,
-  ChevronRight,
-  MessageCircle,
-  ShieldCheck,
-  Star,
-  Infinity,
-  Stethoscope,
-} from "lucide-react";
-import Image from "next/image";
+import { Check, ChevronRight, MessageCircle, Star } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { BorderRotate } from "@/components/ui/animated-gradient-border";
 
 const features = [
-  "+50 casos clínicos reais no CORC",
-  "Material Complementar de Apoio",
-  "[Bônus] Curso de Introdução Geral à Medicina",
-  "[Bônus] Raciocínio no Quadro",
-  "Trilhas de Estudos Organizadas",
-  "Grupo no WhatsApp Exclusivo",
-  "Participações nos Eventos Presenciais",
+  "Acesso imediato a todas as aulas no quadro.",
+  "Áudios disponíveis das aulas.",
+  "Transcrições das aulas (em desenvolvimento).",
+  "Materiais de apoio das aulas.",
+  "Novas aulas adicionadas paulatinamente (Curso Vivo).",
+  'Metodologia exclusiva de "Gavetas Cerebrais".',
+  "Foco 100% prático e agudo para o dia a dia.",
 ];
 
 const testimonials = [
   {
     id: 1,
-    name: "Dr. Rafael M.",
-    role: "Médico Residente",
+    role: "Médica",
     content:
-      "O CORC mudou completamente a forma como penso diante de um caso clínico. Antes eu decorava; agora eu raciocino. A diferença é brutal.",
+      "É no raciocínio no quadro que começam a se formar as 'gavetas cerebrais'. O raciocínio clínico finalmente fica ordenado.",
     rating: 5,
-    avatar: "https://i.pravatar.cc/150?img=32",
   },
   {
     id: 2,
-    name: "Ana Clara T.",
-    role: "Acadêmica de Medicina, 8º período",
+    role: "Estudante",
     content:
-      "Cada aula é uma imersão em raciocínio real. Não existe outra plataforma que ensine medicina do jeito que o Cacau ensina.",
+      "A didática e os esquemas facilitam muito o entendimento da medicina como um todo. É um complemento essencial.",
     rating: 5,
-    avatar: "https://i.pravatar.cc/150?img=44",
   },
   {
     id: 3,
-    name: "Dr. Paulo S.",
-    role: "Clínico Geral",
+    role: "Aluno",
     content:
-      "Formado há 5 anos, encontrei no CORC o que a faculdade nunca me deu: a capacidade de pensar com clareza diante da incerteza clínica.",
+      "Traz o diferencial para quem quer verdadeiramente entender os processos, não apenas decorar.",
     rating: 5,
-    avatar: "https://i.pravatar.cc/150?img=51",
   },
-];
-
-const benefits = [
-  { icon: Infinity, text: "Acesso vitalício ao conteúdo" },
-  { icon: ShieldCheck, text: "15 dias de garantia total" },
-  { icon: Stethoscope, text: "Criado por médico, para médicos" },
 ];
 
 export function CORCPricingCard() {
@@ -99,62 +76,40 @@ export function CORCPricingCard() {
           <div className="flex flex-col lg:flex-row">
             {/* ── Left column: pricing ── */}
             <div className="p-8 lg:p-14 lg:w-1/2 flex flex-col border-b border-secondary/10 lg:border-b-0 lg:border-r">
-              {/* Logo */}
-              <Image
-                src="/logo.svg"
-                alt="C.O.R.C. — Curso Online de Raciocínio Clínico"
-                width={320}
-                height={62}
-                className="w-52 lg:w-72 mb-6"
-              />
-
-              <p className="font-serif font-light text-secondary/70 text-sm lg:text-lg leading-relaxed mb-3 lg:mb-8">
-                Uma formação permanente em raciocínio clínico com<br />o Dr. Carlos
-                Antônio Cacau, do caso real à decisão.
+              <p className="font-serif font-light text-accent text-xs lg:text-sm tracking-[0.15em] uppercase mb-3 lg:mb-8">
+                Grandes Síndromes: O Raciocínio no Quadro
               </p>
 
               {/* Price */}
               <div className="mb-10">
-                <p className="font-serif font-light text-secondary/40 text-xs mb-0">
+                <p className="font-serif font-light text-secondary/40 text-sm lg:text-base mb-0">
                   De{" "}
                   <span className="line-through text-secondary/30">
-                    R$1.068
+                    R$297
                   </span>{" "}
                   por apenas 12x de
                 </p>
                 <div className="flex items-baseline gap-1 mb-6 -mt-2 lg:-mt-5">
-                  <span className="font-serif font-bold text-secondary text-3xl">
+                  <span className="font-serif font-bold text-secondary text-4xl lg:text-5xl">
                     R$
                   </span>
-                  <span className="font-serif font-black text-secondary text-8xl lg:text-9xl leading-none tracking-tighter translate-y-6 inline-block">
-                    80
+                  <span className="font-serif font-black text-secondary text-7xl lg:text-9xl leading-none tracking-tighter translate-y-3 inline-block">
+                    XX
                   </span>
-                  <span className="font-serif font-bold text-secondary text-3xl leading-none">,98</span>
+                  <span className="font-serif font-bold text-secondary text-4xl lg:text-5xl leading-none">,XX</span>
                 </div>
-                <p className="font-serif font-light text-secondary/50 text-base mt-2">
+                <p className="font-serif font-light text-secondary/50 text-lg lg:text-xl mt-2">
                   ou{" "}
-                  <strong className="font-bold text-secondary/80">R$797,00</strong>{" "}
+                  <strong className="font-bold text-secondary/80">R$197</strong>{" "}
                   à vista
                 </p>
               </div>
-
-              {/* Benefits */}
-              <ul className="flex flex-col gap-3 mb-8">
-                {benefits.map(({ icon: Icon, text }, i) => (
-                  <li key={i} className="flex items-center gap-3">
-                    <Icon className="h-4 w-4 text-accent flex-shrink-0" />
-                    <span className="font-serif font-light text-secondary/75 text-sm lg:text-base">
-                      {text}
-                    </span>
-                  </li>
-                ))}
-              </ul>
 
               {/* CTAs */}
               <div className="mt-auto flex flex-col gap-2">
                 <Button size="sm" className="w-full group" asChild>
                   <Link href="https://pay.hub.la/Bx8I7wO9zk0DmaF1OUEP" target="_blank">
-                    Clique e Matricule-se
+                    Quero garantir meu acesso agora
                     <ChevronRight className="h-3 w-3 ml-auto transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
@@ -209,19 +164,9 @@ export function CORCPricingCard() {
                           className="absolute inset-0 p-5 flex flex-col gap-3"
                         >
                           <div className="flex items-center gap-3">
-                            <img
-                              src={t.avatar}
-                              alt={t.name}
-                              className="w-5 h-5 lg:w-9 lg:h-9 rounded-full object-cover grayscale opacity-70"
-                            />
-                            <div className="flex-1 min-w-0">
-                              <p className="font-serif font-bold text-secondary/90 text-[10px] lg:text-sm leading-none">
-                                {t.name}
-                              </p>
-                              <p className="font-serif font-light text-secondary/40 text-[9px] lg:text-xs mt-0.5 truncate">
-                                {t.role}
-                              </p>
-                            </div>
+                            <p className="flex-1 min-w-0 font-serif font-bold text-secondary/90 text-[10px] lg:text-sm leading-none">
+                              {t.role}
+                            </p>
                             <div className="flex gap-0.5 flex-shrink-0">
                               {Array.from({ length: t.rating }).map((_, si) => (
                                 <Star
