@@ -32,17 +32,17 @@ export default function StickyBuyBar() {
 
   return (
     <div
-      className={`fixed bottom-4 lg:bottom-6 inset-x-0 z-50 flex justify-center px-4 transition-all duration-300 ${
+      className={`fixed inset-x-0 z-50 flex justify-center px-4 transition-all duration-300 bottom-[max(1rem,env(safe-area-inset-bottom))] lg:bottom-6 ${
         visible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="flex items-center gap-4 bg-primary border border-accent/20 rounded-full shadow-xl shadow-black/30 px-4 py-2.5 lg:px-6 lg:py-3">
+      <div className="w-full max-w-xs sm:max-w-none sm:w-auto flex items-center gap-4 bg-primary border border-accent/20 rounded-full shadow-xl shadow-black/30 px-3 py-2 lg:px-6 lg:py-3">
         <span className="hidden sm:block font-serif font-light text-secondary/70 text-sm lg:text-base whitespace-nowrap">
           Não perca seu cashback de 150%.
         </span>
         <a
           href="#preco"
-          className="text-center bg-accent text-primary font-bold text-[10px] tracking-[0.15em] uppercase px-4 py-2.5 rounded-full hover:bg-accent/90 transition-colors lg:text-xs lg:tracking-[0.18em] lg:px-7 lg:py-3 whitespace-nowrap"
+          className="w-full sm:w-auto text-center bg-accent text-primary font-bold text-[9px] tracking-[0.1em] uppercase px-3 py-2.5 sm:py-2.5 rounded-full active:bg-accent/90 transition-colors lg:text-xs lg:tracking-[0.18em] lg:px-7 lg:py-3 whitespace-nowrap lg:hover:bg-accent/90"
         >
           Quero meu cashback de 150%
         </a>
